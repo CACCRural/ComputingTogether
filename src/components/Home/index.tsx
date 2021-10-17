@@ -6,12 +6,11 @@ import Menu from '../Menu'
 function Home() {
   return (<>
     <Menu />
-    <div style={{ color: 'white' }}>
+    <div>
       alguma coisa qualquer
     </div>
     <Footer />
-  </>
-  )
+  </>)
 }
 
 export default Home
