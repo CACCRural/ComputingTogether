@@ -67,5 +67,5 @@
     "webpack-dev-server": "^4.3.1",
     "workbox-webpack-plugin": "^6.3.0"
   },
-  "description": "SEECCIM"
+  "description": "computingTogether"
 }
