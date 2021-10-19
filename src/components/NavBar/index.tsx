@@ -3,15 +3,17 @@ import React from 'react'
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom'
 
-import logo from '../../assets/images/logo.png'
+import LogoOne from '../../assets/oficial_logo.svg'
 
-export default function Menu() {
+import NavBarDiv from './styles'
+
+export default function NavBar() {
   return (
-    <div>
+    <NavBarDiv>
       <Link to="/">
-        <img src={logo} alt=""/>
+        <LogoOne width="200" height="100" viewBox="120 50 295 150"/>
       </Link>
-      <Button variant="contained" color="primary" href="/#teste">
+      <Button variant="contained" color="primary" href="/10">
         Cronograma
       </Button>
       <Link to="/">
@@ -23,6 +25,6 @@ export default function Menu() {
       <Link to="/">
         Organizadores
       </Link>
-    </div>
+    </NavBarDiv>
   )
 }
