@@ -6,4 +6,7 @@ export default styled.div`
   position: sticky;
   top: 0em;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `
