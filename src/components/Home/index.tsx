@@ -1,12 +1,14 @@
 import React from 'react'
 
 import Footer from '../Footer'
-import Menu from '../Menu'
+import NavBar from '../NavBar'
+
+import { colors } from '../styles/colors'
 
 function Home() {
   return (<>
-    <Menu />
-    <div>
+    <NavBar />
+    <div style={{height: '4000px'}}>
       alguma coisa qualquer
     </div>
     <Footer />
