@@ -8,7 +8,7 @@ import Options from './Options'
 export default function NavBar() {
   return (
     <NavBarDiv>
-      <Link to="/" >
+      <Link to="/" onClick={() => window.scrollTo(0, 0)}>
         <Logo width="200" height="120" viewBox="0 0 930.99 466.96"/>
       </Link>
       <Options />

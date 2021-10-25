@@ -21,9 +21,11 @@ export default function Window(props) {
           <Sphere />
         </CirclesDiv>
       </TitleDiv>
-      {
-        props.children
-      }
+      <div className='content'>
+        {
+          props.children
+        }
+      </div>
     </WindowDiv>
   )
 }

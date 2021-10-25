@@ -1,6 +1,7 @@
 {
-  "name": "my-webpack-project",
-  "version": "1.0.0",
+  "name": "computing_together",
+  "version": "0.0.1",
+  "author": "Centro Academico de Ciencia da Computação da UFRRJ",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -25,11 +26,8 @@
   },
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
-    "test": "react-scripts test",
     "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "start": "webpack serve --open --mode development"
   },
   "eslintConfig": {
     "extends": [
@@ -56,7 +54,10 @@
     "@svgr/webpack": "^5.5.0",
     "@webpack-cli/generators": "^2.4.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.13.3",
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.4.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.4.0",
     "interpolate-html-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.4.2",

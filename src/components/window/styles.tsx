@@ -12,6 +12,11 @@ export const WindowDiv = styled.div`
 	-webkit-border-radius : 30px 30px 30px 30px;
   box-shadow: 15px 15px ${colors.text};
   margin: 0 16px 16px 0;
+
+  .content {
+    text-align: justify;
+    padding: 10px 10px 0px 10px;
+  }
 `
 
 export const CirclesDiv = styled.div`
@@ -56,8 +61,6 @@ export const Simbol = styled.p`
   width: 25px;
   font-family: OCR A Std, monospace;
   font-size : 40px;
-  margin-block-start: 0;
-  margin-block-end: 0;
 `
 
 export const TitleDiv = styled.div`

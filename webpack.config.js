@@ -2,6 +2,7 @@
 
 const path = require("path");
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -27,11 +28,17 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      favicon: './src/assets/icons/favicon.png'
+      favicon: './src/assets/icons/favicon.svg'
     }),
 
     new InterpolateHtmlPlugin({
       'PUBLIC_URL': '../public'
+    }),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/assets", to: "assets" },
+      ],
     })
   ],
   module: {
@@ -41,7 +48,8 @@ const config = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', "@babel/preset-react"]
+            presets: ['@babel/preset-env', "@babel/preset-react"],
+            plugins: ["babel-plugin-styled-components"]
           }
         },
         exclude: ["/node_modules/"],
@@ -51,7 +59,7 @@ const config = {
         use: [stylesHandler, "css-loader"],
       },
       {
-        test: /\.(eot|ttf|woff|woff2|png|jpg|gif)$/i,
+        test: /\.(otf|eot|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset/resource",
       },
       {

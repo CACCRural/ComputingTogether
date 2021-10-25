@@ -3,32 +3,89 @@ import React from 'react'
 import Footer from '../Footer'
 import NavBar from '../NavBar'
 
-import Window from '../window'
+import Window from '../Window'
+import Scheduler from '../Scheduler'
 
-import { HomeDiv } from './styles'
-
-import Background from '../../assets/background/green_background.png'
+import { HomeDiv, TextDiv } from './styles'
 
 function Home() {
   return (<>
     <NavBar />
     <HomeDiv>
-      <p style={{ margin: '0' }}> alguma coisa qualquer </p>
-      <Window title="teste com abacate né" style={{width: '600px', boxShadow: '20px 2px'}}>
-        ala os filhos
-      </Window>
+      <TextDiv>
+        <h2> Lorem ipsum </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+          Morbi tristique senectus et netus et.
+          Enim diam vulputate ut pharetra sit amet aliquam id.
+          Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+          Congue quisque egestas diam in arcu cursus euismod. Luctus venenatis lectus magna fringilla.
+          Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
+          Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
+          Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+          Luctus accumsan tortor posuere ac ut consequat.
+          Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+          Fusce id velit ut tortor pretium viverra suspendisse.
+          Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
+          Sed libero enim sed faucibus turpis.
+        </p>
+      </TextDiv>
 
-      <Window title="teste com mais coisa pra ficar da hora" style={{width: '1200px', height: '600px'}}>
-        ala os filhos 2
-      </Window>
+      <TextDiv>
+        <h2> Lorem ipsum </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+          Morbi tristique senectus et netus et.
+          Enim diam vulputate ut pharetra sit amet aliquam id.
+          Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+          Congue quisque egestas diam in arcu cursus euismod. Luctus venenatis lectus magna fringilla.
+          Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
+          Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
+          Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+          Luctus accumsan tortor posuere ac ut consequat.
+          Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+          Fusce id velit ut tortor pretium viverra suspendisse.
+          Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
+          Sed libero enim sed faucibus turpis.
+        </p>
+      </TextDiv>
 
-      <Window title="teste com algumas coisas pra ficar bunito" style={{width: '800px'}}>
-        ala os filhos 3
-      </Window>
-      <div style={{backgroundImage: `url('/background/green_background.png'})`}}>
-        aaaa
+      <div style={{ display: 'flex', flexDirection: 'column', width: '30vw' }}>
+        <Window title="teste com abacate né" style={{ width: '100%', height: '350px' }}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Accumsan sit amet nulla facilisi morbi tempus iaculis.
+            Morbi tristique senectus et netus et.
+            Enim diam vulputate ut pharetra sit amet aliquam id.
+            Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+            Congue quisque egestas diam in arcu cursus euismod. Luctus venenatis lectus magna fringilla.
+            Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
+            Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
+            Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+            Luctus accumsan tortor posuere ac ut consequat.
+            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+            Fusce id velit ut tortor pretium viverra suspendisse.
+            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
+            Sed libero enim sed faucibus turpis.
+          </p>
+        </Window>
+        <div style={{paddingTop: '10px', textAlign: 'justify'}}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Accumsan sit amet nulla facilisi morbi tempus iaculis.
+            Morbi tristique senectus et netus et.
+            Enim diam vulputate ut pharetra sit amet aliquam id.
+          </p>
+        </div>
       </div>
     </HomeDiv>
+    <Scheduler />
     <Footer />
   </>)
 }
