@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 
-import { colors } from '../styles/colors'
+import { colors } from '../../styles/colors'
 
 export const NavBarDiv = styled.div`
   position: -webkit-sticky;
@@ -11,8 +11,8 @@ export const NavBarDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: ${colors['green']};
   opacity: 0.98;
+  background-image: url('../../assets/background/green_background.png');
 `
 
 export const OptionsDiv = styled.div`

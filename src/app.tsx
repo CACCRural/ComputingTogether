@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom'
 
 import Home from './components/Home'
-import GlobalStyle from './GlobalStyle'
+import GlobalStyle from './styles'
 
 export default function App() {
   return (
