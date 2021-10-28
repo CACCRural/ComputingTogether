@@ -6,7 +6,7 @@ import NavBar from '../NavBar'
 import Window from '../Window'
 import Scheduler from '../Scheduler'
 
-import { HomeDiv, TextDiv } from './styles'
+import { HomeDiv, TextDiv, WindowDiv } from './styles'
 
 function Home() {
   return (<>
@@ -54,9 +54,9 @@ function Home() {
         </p>
       </TextDiv>
 
-      <div style={{ display: 'flex', flexDirection: 'column', width: '30vw' }}>
-        <Window title="teste com abacate né" style={{ width: '100%', height: '350px' }}>
-          <p>
+      <WindowDiv>
+        <Window title="teste com abacate né" width='100%' height='350px' ContentHeight="70%">
+          <p style={{ textAlign: 'justify' }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Accumsan sit amet nulla facilisi morbi tempus iaculis.
@@ -67,6 +67,21 @@ function Home() {
             Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
             Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
             Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+            Luctus accumsan tortor posuere ac ut consequat.
+            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+            Fusce id velit ut tortor pretium viverra suspendisse.
+            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
+            Sed libero enim sed faucibus turpis.
+            Luctus accumsan tortor posuere ac ut consequat.
+            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+            Fusce id velit ut tortor pretium viverra suspendisse.
+            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
+            Sed libero enim sed faucibus turpis.
+            Luctus accumsan tortor posuere ac ut consequat.
+            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+            Fusce id velit ut tortor pretium viverra suspendisse.
+            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
+            Sed libero enim sed faucibus turpis.
             Luctus accumsan tortor posuere ac ut consequat.
             Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
             Fusce id velit ut tortor pretium viverra suspendisse.
@@ -83,7 +98,7 @@ function Home() {
             Enim diam vulputate ut pharetra sit amet aliquam id.
           </p>
         </div>
-      </div>
+      </WindowDiv>
     </HomeDiv>
     <Scheduler />
     <Footer />

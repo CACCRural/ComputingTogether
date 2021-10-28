@@ -1,10 +1,11 @@
 import React from 'react'
+import { WindowProps } from '../../types'
 
 import { WindowDiv, TitleDiv, CirclesDiv, Circle, Sphere, SimbolsDiv, Simbol } from './styles'
 
-export default function Window(props) {
+export default function Window(props:WindowProps) {
   return (
-    <WindowDiv style={props.style}>
+    <WindowDiv {...props}>
       <TitleDiv>
         <SimbolsDiv>
           <Simbol>
@@ -14,7 +15,9 @@ export default function Window(props) {
             {'>'}
           </Simbol>
         </SimbolsDiv>
-        {props.title}
+        <span>
+          {props.title}
+        </span>
         <CirclesDiv>
           <Circle />
           <Circle />
@@ -22,9 +25,7 @@ export default function Window(props) {
         </CirclesDiv>
       </TitleDiv>
       <div className='content'>
-        {
-          props.children
-        }
+        { props.children }
       </div>
     </WindowDiv>
   )

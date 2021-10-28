@@ -1,7 +1,8 @@
-import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 
 import { colors } from './colors'
+
+export const MaxWidth = '1024px'
 
 export default createGlobalStyle`
   body { 
@@ -22,5 +23,17 @@ export default createGlobalStyle`
   @font-face {
     font-family: "Outfit Bond";
     src: url('../assets/fonts/Outfit-Bold.otf') format("opentype");
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: ${colors.scroll_bar}; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${colors.dark_green};
   }
 `

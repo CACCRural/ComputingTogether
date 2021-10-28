@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 import { colors } from '../../styles/colors'
+import { WindowProps } from '../../types'
 
-export const WindowDiv = styled.div`
+export const WindowDiv = styled.div<WindowProps>`
 	background : ${colors.background};
 	border-style : Solid;
 	border-color : ${colors.text};
@@ -12,10 +13,15 @@ export const WindowDiv = styled.div`
 	-webkit-border-radius : 30px 30px 30px 30px;
   box-shadow: 15px 15px ${colors.text};
   margin: 0 16px 16px 0;
-
+  width: ${props => props.width};
+  height: ${props => props.height};
+  
   .content {
+    height: ${props => props.ContentHeight};
+    width: ${props => props.ContentWidth};
+    overflow: auto;
     text-align: justify;
-    padding: 10px 10px 0px 10px;
+    padding: 2px 2px 15px 2px;
   }
 `
 
@@ -71,5 +77,5 @@ export const TitleDiv = styled.div`
 	border-bottom-color : ${colors.text};
 	border-bottom-width : 5px;
   color : ${colors.text};
-  font-size : 35px;
+  font-size : 2vw;
 `

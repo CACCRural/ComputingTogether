@@ -24,7 +24,7 @@ export const OptionsDiv = styled.div`
 `
 
 export const NavItemDiv = styled.div`
-  width: 8em;
+  width: 8.5em;
   height: 4em;
 `
 export const NavLink = styled.a`
@@ -33,4 +33,5 @@ export const NavLink = styled.a`
   align-items: center;
   color: ${colors['text']};
   text-decoration: none;
+  font-family: Outfit Regular;
 `

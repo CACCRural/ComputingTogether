@@ -2,15 +2,22 @@ import React from "react"
 import styled from 'styled-components'
 
 import { colors } from '../../styles/colors'
+import { MaxWidth } from '../../styles'
 
 export const HomeDiv = styled.div`
   background-color: ${colors['light_green']};
   display: flex;
   justify-content: space-around;
   align-items: top;
-  height: 600px;
   padding-top: 10px;
+  height: 50%;
   width: 100%;
+
+  @media (max-width: ${MaxWidth}) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+  }
 `
 
 export const TextDiv = styled.div`
@@ -22,5 +29,21 @@ export const TextDiv = styled.div`
 
   p {
     text-align: justify;
+  }
+
+  @media (max-width: ${MaxWidth}) {
+    width: 80%;
+  }
+`
+
+export const WindowDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+
+  @media (max-width: ${MaxWidth}) {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 `

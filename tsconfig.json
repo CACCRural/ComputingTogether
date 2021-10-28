@@ -3,7 +3,13 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "module": "es6",
-    "target": "es5"
+    "target": "es5",
+    "jsx": "react",
+    "removeComments": true,
+    "pretty": true,
+    "strict": true,
+    "moduleResolution": "node",
   },
-  "files": ["src/index.tsx"]
+  "include": ["src/**/*", "/components/custom.d.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "src/assets"]
 }

@@ -4,7 +4,7 @@ import React from 'react'
 import { OptionsDiv } from './styles'
 import NavItem from './NavItem'
 
-export default function NavOptions(props) {
+export default function NavOptions(props:any) {
   return (
     <OptionsDiv>
       <NavItem link="/#schedule" text="Cronograma"/>
