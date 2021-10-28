@@ -2,6 +2,7 @@
   "name": "computing_together",
   "version": "0.0.1",
   "author": "Centro Academico de Ciencia da Computação da UFRRJ",
+  "homepage": "https://caccrural.github.io/SECCIM/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
