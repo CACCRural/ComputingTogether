@@ -22,7 +22,7 @@ export const HomeDiv = styled.div`
 
 export const TextDiv = styled.div`
   width: 25vw;
-  padding: 0px 10px 0px 10px;
+  padding: 40px 10px 0px 10px;
   h2 { 
     text-align: center;
   }
@@ -40,10 +40,30 @@ export const WindowDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 30vw;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
   @media (max-width: ${MaxWidth}) {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+`
+
+export const CapivaraDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: xx-small;
+`
+
+export const Capivara = styled.div`
+  background-image: url('../../assets/icons/capivara.webp');
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  width: 250px;
+  height: 250px;
 `

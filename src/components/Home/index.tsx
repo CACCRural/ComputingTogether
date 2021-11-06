@@ -5,98 +5,33 @@ import Window from '../Window'
 import Scheduler from '../Scheduler'
 import Live from '../Live'
 
-import { HomeDiv, TextDiv, WindowDiv } from './styles'
+import { HomeDiv, TextDiv, WindowDiv, CapivaraDiv, Capivara } from './styles'
 
 function Home() {
   return (<>
     <NavBar />
     <HomeDiv>
       <TextDiv>
-        <h2> Lorem ipsum </h2>
+        <h2> O que é a Computing Together ?</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Accumsan sit amet nulla facilisi morbi tempus iaculis.
-          Morbi tristique senectus et netus et.
-          Enim diam vulputate ut pharetra sit amet aliquam id.
-          Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-          Congue quisque egestas diam in arcu cursus euismod. Luctus venenatis lectus magna fringilla.
-          Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
-          Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
-          Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
-          Luctus accumsan tortor posuere ac ut consequat.
-          Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-          Fusce id velit ut tortor pretium viverra suspendisse.
-          Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
-          Sed libero enim sed faucibus turpis.
+          A Semana da Computação é o evento anual dos alunos do curso de Ciência da Computação da UFRRJ, que se encontra em sua décima edição.
+          Esse ano, nos dedicamos muito para trazer o melhor evento possível, com foco em todos os detalhes. Trazemos atividades e convidados relevantes para que possam aproveitar ao máximo.
+          É nosso sincero desejo que apreciem a paixão, o cuidado e o profissionalismo do trabalho realizado que culminou no Evento que presenciarão. Desde já, nosso muito obrigado!
         </p>
       </TextDiv>
-
-      <TextDiv>
-        <h2> Lorem ipsum </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Accumsan sit amet nulla facilisi morbi tempus iaculis.
-          Morbi tristique senectus et netus et.
-          Enim diam vulputate ut pharetra sit amet aliquam id.
-          Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-          Congue quisque egestas diam in arcu cursus euismod. Luctus venenatis lectus magna fringilla.
-          Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
-          Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
-          Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
-          Luctus accumsan tortor posuere ac ut consequat.
-          Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-          Fusce id velit ut tortor pretium viverra suspendisse.
-          Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
-          Sed libero enim sed faucibus turpis.
-        </p>
-      </TextDiv>
-
+      <CapivaraDiv>
+        <Capivara />
+        <span>Capivaras são fofas e também o mascote da UFRRJ</span>
+      </CapivaraDiv>
       <WindowDiv>
-        <Window title="teste com abacate né" width='100%' height='350px' contentHeight="70%">
-          <p style={{ textAlign: 'justify' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Accumsan sit amet nulla facilisi morbi tempus iaculis.
-            Morbi tristique senectus et netus et.
-            Enim diam vulputate ut pharetra sit amet aliquam id.
-            Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-            Congue quisque egestas diam in arcu cursus euismod. Luctus venenatis lectus magna fringilla.
-            Ligula ullamcorper malesuada proin libero nunc. Suspendisse faucibus interdum posuere lorem ipsum dolor.
-            Mauris cursus mattis molestie a iaculis. Nisi vitae suscipit tellus mauris a diam maecenas sed.
-            Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
-            Luctus accumsan tortor posuere ac ut consequat.
-            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-            Fusce id velit ut tortor pretium viverra suspendisse.
-            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
-            Sed libero enim sed faucibus turpis.
-            Luctus accumsan tortor posuere ac ut consequat.
-            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-            Fusce id velit ut tortor pretium viverra suspendisse.
-            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
-            Sed libero enim sed faucibus turpis.
-            Luctus accumsan tortor posuere ac ut consequat.
-            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-            Fusce id velit ut tortor pretium viverra suspendisse.
-            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
-            Sed libero enim sed faucibus turpis.
-            Luctus accumsan tortor posuere ac ut consequat.
-            Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-            Fusce id velit ut tortor pretium viverra suspendisse.
-            Volutpat ac tincidunt vitae semper quis lectus nulla at. Molestie nunc non blandit massa enim nec dui nunc.
-            Sed libero enim sed faucibus turpis.
+        <Window titleSize="140%" title='Por que "Computing Together"?' width='100%' height='350px' contentHeight="70%">
+          <p>
+            Pra quem não sabe, durante quase uma década o nome da Semana Acadêmica do curso foi Seccim.
+            Entretanto, devido ao impacto da pandemia e a necessidade de migrar o que antes acontecia no campus para o formato online,
+            nos ocorreu a ideia de atualizar o nome para melhor refletir o momento de distanciamento em que vivemos. Com isso em mente,
+            a logo da Computing Together possui dois cursores, simbolizando pessoas diferentes que combinam suas habilidades para atingir um propósito maior em comum.
           </p>
         </Window>
-        <div style={{paddingTop: '10px', textAlign: 'justify'}}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Accumsan sit amet nulla facilisi morbi tempus iaculis.
-            Morbi tristique senectus et netus et.
-            Enim diam vulputate ut pharetra sit amet aliquam id.
-          </p>
-        </div>
       </WindowDiv>
     </HomeDiv>
     <Scheduler />
