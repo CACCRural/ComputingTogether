@@ -15,13 +15,15 @@ export const WindowDiv = styled.div<WindowProps>`
   margin: 0 16px 16px 0;
   width: ${props => props.width};
   height: ${props => props.height};
+  overflow: hidden;
   
   .content {
-    height: ${props => props.ContentHeight};
-    width: ${props => props.ContentWidth};
+    height: ${props => props.contentHeight};
+    width: ${props => props.contentWidth};
+    background-color: ${props => props.contentBackgroundColor};
     overflow: auto;
     text-align: justify;
-    padding: 2px 2px 15px 2px;
+    padding: ${props => props.removePadding ? '': '2px 2px 15px 2px'};
   }
 `
 
@@ -58,7 +60,8 @@ export const SimbolsDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 3%;
+  width: 50px;
+  height: 50px;
   padding-left: 2%;
 `
 
@@ -69,7 +72,11 @@ export const Simbol = styled.p`
   font-size : 40px;
 `
 
-export const TitleDiv = styled.div`
+type TitleProps = {
+  titleSize: string
+}
+
+export const TitleDiv = styled.div<TitleProps>`
   display: flex;
   align-items : center;
   justify-content : space-between;
@@ -77,5 +84,5 @@ export const TitleDiv = styled.div`
 	border-bottom-color : ${colors.text};
 	border-bottom-width : 5px;
   color : ${colors.text};
-  font-size : 2vw;
+  font-size : ${props => props.titleSize};
 `

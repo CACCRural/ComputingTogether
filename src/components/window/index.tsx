@@ -4,9 +4,11 @@ import { WindowProps } from '../../types'
 import { WindowDiv, TitleDiv, CirclesDiv, Circle, Sphere, SimbolsDiv, Simbol } from './styles'
 
 export default function Window(props:WindowProps) {
+  const titleSize = props.titleSize ? props.titleSize: "2vw"
+
   return (
     <WindowDiv {...props}>
-      <TitleDiv>
+      <TitleDiv titleSize={titleSize}>
         <SimbolsDiv>
           <Simbol>
             {'<'}
