@@ -12,6 +12,7 @@ export type Schedule = {
   id: number
   title: string
   date: Date
+  isMarathon?: boolean
   lectures: Lecture[]
 }
 

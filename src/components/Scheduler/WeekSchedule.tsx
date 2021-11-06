@@ -15,7 +15,14 @@ function getDays(onClick: Function, dayId: number)  {
 
   getData().forEach((dayData:Schedule) => {
     days.push(
-      <WeekSchedulerItem key={`day_${dayData.id}`} text={dayData.title} onClick={onClick} dayId={dayData.id} actualDayId={dayId}/>
+      <WeekSchedulerItem
+        key={`day_${dayData.id}`}
+        text={dayData.title}
+        onClick={onClick}
+        dayId={dayData.id}
+        actualDayId={dayId}
+        isMarathon={dayData.isMarathon}
+      />
     )
   })
 
