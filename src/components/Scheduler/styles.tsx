@@ -98,6 +98,22 @@ export const Maratonou = styled.button`
 	font-size: 1vw;
 `
 
+export const MaratonouText = styled.div`
+	font-family: Calling Regular;
+	
+	h1 {
+		border-bottom: 5px;
+		margin-block-start: 0;
+    margin-block-end: 0;
+	}
+
+	span {
+		font-family: Outfit Regular;
+	}
+	@media (max-width: ${MaxWidth}) {
+	}
+`
+
 export const DaySchedulerdiv = styled.div`
 	height: 90%;
 	width: 35%;

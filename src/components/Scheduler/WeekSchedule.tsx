@@ -1,7 +1,7 @@
 import React from 'react'
 
 import MaratonouIcon from '../../assets/icons/maratonou.svg'
-import { WeekScheluderGrid, WeekScheluderdiv, Maratonou } from './styles'
+import { WeekScheluderGrid, WeekScheluderdiv, Maratonou, MaratonouText } from './styles'
 import Window from '../Window'
 import WeekSchedulerItem from './WeekSchedulerItem'
 
@@ -59,10 +59,10 @@ export default function WeekScheluder(props:any) {
         contentHeight='calc(100% - 70px)'>
         <Maratonou onClick={() => onClick()}>
           <MaratonouIcon width="100px" viewBox="100 100 300 300" preserveAspectRatio="xMinYMin"/>
-          <div>
+          <MaratonouText>
             <h1>Inscreva-se!</h1>
-            <span>xx/xx à xx/xx</span>
-          </div>
+            <span>13/11 de 14:00 as 18:00</span>
+          </MaratonouText>
         </Maratonou>
       </Window>
     </WeekScheluderdiv>
