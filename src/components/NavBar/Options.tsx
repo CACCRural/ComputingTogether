@@ -9,7 +9,7 @@ export default function NavOptions(props:any) {
     <OptionsDiv>
       <NavItem link="/#schedule" text="Cronograma"/>
       <NavItem link="/#live" text="Live"/>
-      <NavItem link="/#lastEvents" text="Eventos Anteriores"/>
+      {/* <NavItem link="/#lastEvents" text="Eventos Anteriores"/> */}
     </OptionsDiv>
   )
 }

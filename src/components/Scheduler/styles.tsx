@@ -17,7 +17,8 @@ export const ScheluderDiv = styled.div`
 	@media (max-width: ${MaxWidth}) {
 		display: flex;
 		flex-direction: column;
-		height: 250vh;
+		height: fit-content;
+		padding-bottom: 20px;
 	}
 `
 
@@ -103,7 +104,7 @@ export const DaySchedulerdiv = styled.div`
 
 	@media (max-width: ${MaxWidth}) {
 		width: 90%;
-		height: 90vh;
+		height: 5%;
 	}
 `
 
@@ -111,7 +112,7 @@ export const DaySchedulerGrid = styled.section`
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
-	row-gap: 8%;
+	row-gap: 1%;
 	column-gap: 3%;
 	height: 100%;
 
@@ -138,20 +139,24 @@ export const DayScheduleButton = styled.button`
 
 	@media (max-width: ${MaxWidth}) {
 		font-size: 3.5vw;
-		height: 90vh;
 	}
 `
 
 export const LectureInfoDiv = styled.div`
 	height: 70%;
 	width: 25%;
+
+	@media (max-width: ${MaxWidth}) {
+		width: 90%;
+	}
 `
 
 export const LectureContentDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	height: 100%;
 `
 
 type ImageDiv = {

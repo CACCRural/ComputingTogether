@@ -25,8 +25,9 @@ function getLecture(dayId: number, lectureId: number) {
 export default function LectureInfo(props:any) {
   const lecture: Lecture|null = getLecture(props.dayId, props.lectureId)
 
-  if(!lecture) {
-    return null
+  if(!lecture || !lecture.description) {
+    return <LectureInfoDiv style={{ opacity: "0"}}>      
+    </LectureInfoDiv>
   }
 
   let speakersImage = null
@@ -63,8 +64,10 @@ export default function LectureInfo(props:any) {
     <LectureInfoDiv>
       <Window title="Palestrantes"
         width="100%"
-        height=""
+        height="100%"
         contentBackgroundColor={colors.blue}
+        contentHeight='calc(100% - 69px)'
+        contentWidth='100%'
       >
         <LectureContentDiv>
           {speakersImage}
