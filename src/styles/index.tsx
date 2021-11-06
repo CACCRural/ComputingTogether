@@ -7,12 +7,12 @@ export const MaxWidth = '1024px'
 export default createGlobalStyle`
   body { 
     background-color: ${colors.background};
+    font-family: "Calling Regular"
   }
 
   p {
     margin-block-start: 0;
     margin-block-end: 0;
-    font-family: "Outfit Regular"
   }
 
   @font-face {
@@ -21,9 +21,10 @@ export default createGlobalStyle`
   }
 
   @font-face {
-    font-family: "Outfit Bond";
-    src: url('../assets/fonts/Outfit-Bold.otf') format("opentype");
+    font-family: "Calling Regular";
+    src: url('../assets/fonts/Calling-Code-Regular.otf') format("opentype");
   }
+  
 
   ::-webkit-scrollbar {
     width: 6px;

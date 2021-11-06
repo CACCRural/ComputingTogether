@@ -6,5 +6,6 @@ export const colors = {
   'light_blue': '#308795',
   'blue': '#144A68',
   'background': '#FBF4E6',
+  'background_highlight': '#38A3A5',
   'scroll_bar': '#50514b',
 }
