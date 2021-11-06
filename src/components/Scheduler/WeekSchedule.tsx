@@ -5,7 +5,7 @@ import { WeekScheluderGrid, WeekScheluderdiv, Maratonou } from './styles'
 import Window from '../Window'
 import WeekSchedulerItem from './WeekSchedulerItem'
 
-import getData from '../../database'
+import getData, { getMaratonouLink } from '../../database'
 import { Schedule } from "../../types";
 
 import { MaxWidth } from '../../styles'
@@ -27,6 +27,11 @@ function getDays(onClick: Function, dayId: number)  {
   })
 
   return days
+}
+
+function onClick() {
+  const ref = getMaratonouLink()
+  window.open(ref, "_blank")
 }
 
 export default function WeekScheluder(props:any) {
@@ -52,7 +57,7 @@ export default function WeekScheluder(props:any) {
       <Window title="Maratona" 
         width={maratonouWindowWidth} height={maratonouWindowHeight}
         contentHeight='calc(100% - 70px)'>
-        <Maratonou>
+        <Maratonou onClick={() => onClick()}>
           <MaratonouIcon width="100px" viewBox="100 100 300 300" preserveAspectRatio="xMinYMin"/>
           <div>
             <h1>Inscreva-se!</h1>

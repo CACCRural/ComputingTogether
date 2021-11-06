@@ -1,5 +1,5 @@
 import { Lecture } from '../types'
-import { scheduleData } from './data'
+import { scheduleData, links } from './data'
 /*
 * Essa função existe para ser facilmente adicionado um novo local com as informações
 * das palestras
@@ -13,4 +13,8 @@ export function getfirstLecture(dayID: number): Lecture {
   const lectures = day?.lectures
 
   return lectures[0]
+}
+
+export function getMaratonouLink() { 
+  return links.maratonou
 }
