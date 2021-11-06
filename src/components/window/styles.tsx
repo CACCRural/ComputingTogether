@@ -23,7 +23,7 @@ export const WindowDiv = styled.div<WindowProps>`
     background-color: ${props => props.contentBackgroundColor};
     overflow: auto;
     text-align: justify;
-    padding: ${props => props.removePadding ? '': '2px 2px 15px 2px'};
+    padding: ${props => props.removePadding ? '': '2px 10px 15px 10px'};
   }
 `
 

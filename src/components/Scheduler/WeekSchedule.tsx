@@ -49,7 +49,8 @@ export default function WeekScheluder(props:any) {
 
   return (
     <WeekScheluderdiv>
-      <Window title="Calendário" width='100%' height={scheduleHeight} contentHeight='85%'>
+      <Window title="Calendário" width='100%'
+      height={scheduleHeight} contentHeight='calc(100% - 55px)' removePadding>
         <WeekScheluderGrid>
           {days}
         </WeekScheluderGrid>
