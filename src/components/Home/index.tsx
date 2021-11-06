@@ -1,10 +1,9 @@
 import React from 'react'
 
-import Footer from '../Footer'
 import NavBar from '../NavBar'
-
 import Window from '../Window'
 import Scheduler from '../Scheduler'
+import Live from '../Live'
 
 import { HomeDiv, TextDiv, WindowDiv } from './styles'
 
@@ -55,7 +54,7 @@ function Home() {
       </TextDiv>
 
       <WindowDiv>
-        <Window title="teste com abacate né" width='100%' height='350px' ContentHeight="70%">
+        <Window title="teste com abacate né" width='100%' height='350px' contentHeight="70%">
           <p style={{ textAlign: 'justify' }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -101,7 +100,7 @@ function Home() {
       </WindowDiv>
     </HomeDiv>
     <Scheduler />
-    <Footer />
+    <Live />
   </>)
 }
 
