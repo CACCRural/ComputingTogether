@@ -68,7 +68,7 @@ export const scheduleData: Schedule[] = [
         logoImage: 'logos/its_logo.png',
       },
       {
-        id: 203,
+        id: 202,
         title: 'Bate Papo de Carreira na Intelie',
         time: '16h - 17h',
         speakers: ['Gustavo Koltz', 'Hosana Gomes', 'Guilherme Andrade'],
