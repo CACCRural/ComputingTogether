@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 import { colors } from '../../styles/colors'
 import { MaxWidth } from '../../styles'
+import background from '../../assets/background/CT_background.png'
 
 export const ScheluderDiv = styled.div`
-	background-image: url('../../assets/background/CT_background.png');
+	background-image: url(${background});
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: ${colors.green};

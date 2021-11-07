@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { colors } from '../../styles/colors'
 import { MaxWidth } from '../../styles'
+import capivaraImage from '../../assets/images/capivara.png'
 
 export const HomeDiv = styled.div`
   background-color: ${colors['light_green']};
@@ -57,9 +58,8 @@ export const CapivaraDiv = styled.div`
 
   font-size: xx-small;
 `
-
 export const Capivara = styled.div`
-  background-image: url('../../assets/images/capivara.png');
+  background-image: url(${capivaraImage});
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

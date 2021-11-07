@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 import { colors } from '../../styles/colors'
+import background from '../../assets/background/blue_background.png'
 
 export const LiveDiv = styled.div`
-	background-image: url('../../assets/background/blue_background.png');
+background-image: url(${background});
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: ${colors.blue};
