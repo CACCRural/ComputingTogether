@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 
 import { colors } from './colors'
+import outfitRegular from '../assets/fonts/Outfit-Regular.otf'
+import callingCode from '../assets/fonts/Calling-Code-Regular.otf'
+
 
 export const MaxWidth = '1024px'
 
@@ -17,14 +20,13 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "Outfit Regular";
-    src: url('../assets/fonts/Outfit-Regular.otf') format("opentype");
+    src: url(${outfitRegular}) format("opentype");
   }
 
   @font-face {
     font-family: "Calling Regular";
-    src: url('../assets/fonts/Calling-Code-Regular.otf') format("opentype");
+    src: url(${callingCode}) format("opentype");
   }
-  
 
   ::-webkit-scrollbar {
     width: 6px;
