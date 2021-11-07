@@ -11,14 +11,24 @@ function Home() {
   return (<>
     <NavBar />
     <HomeDiv>
-      <TextDiv>
-        <h2> O que é a Computing Together ?</h2>
-        <p>
-          A Semana da Computação é o evento anual dos alunos do curso de Ciência da Computação da UFRRJ, que se encontra em sua décima edição.
-          Esse ano, nos dedicamos muito para trazer o melhor evento possível, com foco em todos os detalhes. Trazemos atividades e convidados relevantes para que possam aproveitar ao máximo.
-          É nosso sincero desejo que apreciem a paixão, o cuidado e o profissionalismo do trabalho realizado que culminou no Evento que presenciarão. Desde já, nosso muito obrigado!
-        </p>
-      </TextDiv>
+      <WindowDiv>
+        <TextDiv>
+          <h2> O que é a Computing Together ?</h2>
+          <p>
+            A Semana da Computação é o evento anual dos alunos do curso de Ciência da Computação da UFRRJ, que se encontra em sua décima edição.
+            Esse ano, nos dedicamos muito para trazer o melhor evento possível, com foco em todos os detalhes. Trazemos atividades e convidados relevantes para que possam aproveitar ao máximo.
+            É nosso sincero desejo que apreciem a paixão, o cuidado e o profissionalismo do trabalho realizado que culminou no Evento que presenciarão. Desde já, nosso muito obrigado!
+          </p>
+        </TextDiv>
+        <Window titleSize="160%" title="O que é o maratonou!?" width="100%" height='300px'>
+          <p>
+          O maratonou! é a iniciativa de estudos de programação competitiva do curso de Ciência da Computação da Rural
+          que visa treinar os nossos alunos para competições como a Maratona SBC de Programação e Olimpíada Brasileira de Informática (OBI) que dão acesso a competições internacionais.
+          Esse ano, o maratonou! junta-se com o evento, oferecendo duas Maratonas de Programação com estilo similar a Maratona SBC,
+          com 10 questões ao todo e 4 horas de duração, uma delas aberta a todo o público, e uma interna como incentivo aos nossos calouros!
+          </p>
+        </Window>
+      </WindowDiv>
       <CapivaraDiv>
         <Capivara />
         <span>Capivaras são fofas e também o mascote da UFRRJ</span>

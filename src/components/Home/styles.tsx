@@ -22,7 +22,7 @@ export const HomeDiv = styled.div`
 
 export const TextDiv = styled.div`
   width: 25vw;
-  padding: 40px 10px 0px 10px;
+  padding-bottom: 40px;
   h2 { 
     text-align: center;
   }
@@ -39,6 +39,8 @@ export const TextDiv = styled.div`
 export const WindowDiv = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   width: 30vw;
   padding-bottom: 40px;
   padding-top: 40px;
