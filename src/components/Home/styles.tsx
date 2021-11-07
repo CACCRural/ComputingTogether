@@ -60,7 +60,7 @@ export const CapivaraDiv = styled.div`
 `
 
 export const Capivara = styled.div`
-  background-image: url('../../assets/icons/capivara.webp');
+  background-image: url('../../assets/icons/capivara.png');
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
