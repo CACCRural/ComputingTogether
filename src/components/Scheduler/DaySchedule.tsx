@@ -12,17 +12,18 @@ type DayScheduleProps = {
   onClick: Function
 }
 
-function getLectures(dayId:number, onClick: Function)  {
+function getLectures(dayId:number, lectureId:number, onClick: Function)  {
   const days:any[] = []
 
   const lectures = getLecturesData(dayId)
   let lecture = {}
-  for(let lecturIndex=0; lecturIndex < LECTURES_PER_DAY; lecturIndex++) {
-    lecture = lectures[lecturIndex] ? lectures[lecturIndex]: {}
+  for(let lectureIndex=0; lectureIndex < LECTURES_PER_DAY; lectureIndex++) {
+    lecture = lectures[lectureIndex] ? lectures[lectureIndex]: {}
     days.push(
       <DayScheduleItem 
-        key={`lecture_${dayId}_${lecturIndex}`}
+        key={`lecture_${dayId}_${lectureIndex}`}
         lecture={lecture}
+        actualLectureId={lectureId}
         height="100%"
         width="100%"
         onClick={onClick}/>
@@ -33,7 +34,7 @@ function getLectures(dayId:number, onClick: Function)  {
 }
 
 export default function DaySchedule(props:DayScheduleProps) {
-  const dayLectures = getLectures(props.dayId, props.onClick)
+  const dayLectures = getLectures(props.dayId, props.lectureId, props.onClick)
 
   return (
     <DaySchedulerdiv>

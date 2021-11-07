@@ -16,6 +16,7 @@ export const WindowDiv = styled.div<WindowProps>`
   width: ${props => props.width};
   height: ${props => props.height};
   overflow: hidden;
+  background-color: ${props => props.backgroundColor};
   
   .content {
     height: ${props => props.contentHeight};
