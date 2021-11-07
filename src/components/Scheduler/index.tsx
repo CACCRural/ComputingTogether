@@ -7,8 +7,8 @@ import LectureInfo from './lectureInfo'
 import { ScheluderDiv } from './styles'
 import { getfirstLecture } from '../../database'
 
-const DEFAULT_DAY_ID = 2
-const DEFAULT_LECTURE_ID = 200
+const DEFAULT_DAY_ID = 1
+const DEFAULT_LECTURE_ID = 101
 
 export default function Schedule(): React.ReactElement {
   const [dayId, setDayID] = useState(DEFAULT_DAY_ID)
