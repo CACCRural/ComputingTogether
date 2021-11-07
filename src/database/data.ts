@@ -20,7 +20,7 @@ export const scheduleData: Schedule[] = [
         title: 'Deep Learning na Prática com TensorFlow',
         time: '15h - 17h',
         speakers: ['Ygor Canalli'],
-        description: 'O minicurso aborda os conceitos básicos de Redes Neurais e Deep Learning no framework TensorFlow em uma abordagem prática. Você pode acompanhar o curso interativamente através do Google Colab. Link para material do minicurso: https://gist.github.com/ygorcanalli/a5f7572ead59deb71d7806beb33d68d2',
+        description: 'O minicurso aborda os conceitos básicos de Redes Neurais e Deep Learning no framework TensorFlow em uma abordagem prática. Você pode acompanhar o curso interativamente através do Google Colab. Link para material do minicurso: https://bit.ly/3bNurop',
         speakersImage: ['ygor.jpg'],
         logoImage: 'logos/coppe_logo.png',
       },
