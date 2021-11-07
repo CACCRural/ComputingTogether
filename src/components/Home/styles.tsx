@@ -1,4 +1,3 @@
-import React from "react"
 import styled from 'styled-components'
 
 import { colors } from '../../styles/colors'
@@ -60,7 +59,7 @@ export const CapivaraDiv = styled.div`
 `
 
 export const Capivara = styled.div`
-  background-image: url('../../assets/icons/capivara.png');
+  background-image: url('../../assets/images/capivara.png');
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
