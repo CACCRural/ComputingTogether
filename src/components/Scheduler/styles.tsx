@@ -159,7 +159,7 @@ export const DayScheduleButton = styled.button`
 `
 
 export const LectureInfoDiv = styled.div`
-	height: 70%;
+	height: 80%;
 	width: 25%;
 
 	@media (max-width: ${MaxWidth}) {
@@ -171,7 +171,7 @@ export const LectureContentDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 	height: 100%;
 `
 
@@ -180,8 +180,8 @@ type ImageDiv = {
 }
 
 export const SpeakerImage = styled.div<ImageDiv>`
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	background-image: url(${props => props.image});
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -191,20 +191,40 @@ export const SpeakerImage = styled.div<ImageDiv>`
 	border-style : Solid;
 	border-color : ${colors.text};
 	border-width : 1px;
-	border-radius: 50px 50px 50px 50px;
-	-moz-border-radius : 50px 50px 50px 50px;
-	-webkit-border-radius : 50px 50px 50px 50px;
+	border-radius: 100px 100px 100px 100px;
+	-moz-border-radius : 100px 100px 100px 100px;
+	-webkit-border-radius : 100px 100px 100px 100px;
   box-shadow: 3px 2.5px ${colors.text};
+`
 
+export const SpeakerContentDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items : center;
+	justify-content : space-between;
+	height: 200px;
+`
+
+export const SpeakersDiv = styled.div`
+	display: flex;
+	align-items : center;
+	justify-content : space-evenly;
+
+	width: 90%;
+	border-bottom: 1px solid white;
+	margin-bottom: 5%;
 `
 
 export const SpeakersHeader = styled.h2`
 	color: white;
-	border-bottom: 1px solid white;
+	margin-block-start: 0px;
+  margin-block-end: 0px;
 `
 
 export const LectureDescription = styled.p`
 	color: white;
+	padding: 0px 25px 0px 25px;
+	margin-bottom: 10%;
 `
 
 export const LogoImage = styled.div<ImageDiv>`
@@ -215,8 +235,8 @@ export const LogoImage = styled.div<ImageDiv>`
 	-moz-border-radius: 30px 30px 30px 30px;
 	-webkit-border-radius: 30px 30px 30px 30px;
   box-shadow: 4px 4px ${colors.text};
-	height: 100px;
-	width: 130px;
+	height: 120px;
+	width: 150px;
 	background-image: url(${props => props.image});
 	background-position: center;
 	background-repeat: no-repeat;

@@ -5,9 +5,11 @@ import getData from '../../database'
 import { colors } from '../../styles/colors'
 import {
   LectureInfoDiv,
+  SpeakerContentDiv,
   SpeakerImage,
   LectureContentDiv,
   LogoImage,
+  SpeakersDiv,
   SpeakersHeader,
   LectureDescription,
 } from './styles'
@@ -30,18 +32,24 @@ export default function LectureInfo(props:any) {
     </LectureInfoDiv>
   }
 
-  let speakersImage = null
-  if(lecture.speakersImage.length > 0) {
-    speakersImage = <SpeakerImage image={BASE_IMAGES_LOCATION + lecture.speakersImage}/>
-  }
 
-  let speakers = null
+  const speakers:any[] = []
   if(lecture.speakers) {
-    speakers = (
-      <SpeakersHeader>
-        {lecture.speakers}
-      </SpeakersHeader>
-    )
+    lecture.speakers.forEach((speaker, index) => {
+      const speakerName = <SpeakersHeader>{speaker}</SpeakersHeader>
+      let speakerImage = null
+      const imagePath = lecture.speakersImage[index]
+      if(imagePath) {
+        speakerImage = <SpeakerImage image={BASE_IMAGES_LOCATION + imagePath}/>
+      }
+      
+      speakers.push(
+        <SpeakerContentDiv key={`speakers_${index}`}>
+          {speakerImage}
+          {speakerName}
+        </SpeakerContentDiv>
+      )
+    })
   }
 
   let description = null
@@ -66,12 +74,14 @@ export default function LectureInfo(props:any) {
         width="100%"
         height="100%"
         contentBackgroundColor={colors.blue}
-        contentHeight='calc(100% - 69px)'
+        contentHeight='calc(100% - 55px)'
         contentWidth='100%'
+        removePadding
       >
         <LectureContentDiv>
-          {speakersImage}
-          {speakers}
+          <SpeakersDiv>
+            {speakers}
+          </SpeakersDiv>
           {description}
           {logo}
         </LectureContentDiv>
