@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import DaySchedule from './DaySchedule'
 import WeekSchedule from './WeekSchedule'
-import LectureInfo from './lectureInfo'
+import LectureInfo from './LectureInfo'
 
 import { ScheluderDiv } from './styles'
 import { getfirstLecture } from '../../database'
