@@ -32,7 +32,7 @@ export default function LectureInfo(props:any) {
     </LectureInfoDiv>
   }
 
-
+  let useColumn = false
   const speakers:any[] = []
   if(lecture.speakers) {
     lecture.speakers.forEach((speaker, index) => {
@@ -50,6 +50,9 @@ export default function LectureInfo(props:any) {
         </SpeakerContentDiv>
       )
     })
+    if(lecture.speakers.length > 2) {
+      useColumn = true
+    }
   }
 
   let description = null
@@ -79,7 +82,7 @@ export default function LectureInfo(props:any) {
         removePadding
       >
         <LectureContentDiv>
-          <SpeakersDiv>
+          <SpeakersDiv useColumn={useColumn}>
             {speakers}
           </SpeakersDiv>
           {description}

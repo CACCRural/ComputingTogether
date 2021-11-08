@@ -216,15 +216,24 @@ export const SpeakerContentDiv = styled.div`
 	height: 200px;
 `
 
-export const SpeakersDiv = styled.div`
+type speakersDivtype = {
+	useColumn: boolean;
+}
+
+export const SpeakersDiv = styled.div<speakersDivtype>`
 	display: flex;
 	align-items : center;
-	justify-content : space-evenly;
-
+	${ props => {
+		if(props.useColumn) {
+			return 'justify-content : center; flex-direction: column;'
+		}	else {
+			return 'justify-content : space-evenly; flex-direction: row;'
+		}
+	}};
 	width: 90%;
+	max-height: 30%;
 	border-bottom: 1px solid white;
 	margin-bottom: 5%;
-	margin-top: 5%;
 
 	@media(max-width: ${MaxWidth}) {
 		margin-top: 20px;
