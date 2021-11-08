@@ -121,7 +121,6 @@ export const DaySchedulerdiv = styled.div`
 
 	@media (max-width: ${MaxWidth}) {
 		width: 90%;
-		height: 5%;
 	}
 `
 
@@ -152,6 +151,7 @@ export const DayScheduleButton = styled.button`
 
 	@media (max-width: ${MaxWidth}) {
 		font-size: 120%;
+		min-height: 300px;
 	}
 
 	@media (min-width: 2500px) {
@@ -165,7 +165,6 @@ export const DayScheduleButton = styled.button`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 	}
 `
 

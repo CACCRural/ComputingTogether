@@ -19,7 +19,7 @@ export default function DayScheduleItem(props: any) {
         title={lecture.time} height={props.height}
         width={props.width} contentHeight='calc(100% - 55px)'
         backgroundColor={selected ? colors.background_highlight: ''}
-        textAlign='center'
+        textAlign='center' removePadding
       >
         <p className="buttonText">
           {lecture.title}
