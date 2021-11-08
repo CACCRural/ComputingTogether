@@ -135,7 +135,7 @@ export const DaySchedulerGrid = styled.section`
 
 	@media (max-width: ${MaxWidth}) {
 		width: 100%;
-		row-gap: 4vh;
+		row-gap: 40px;
 		margin-right: 10px;
 	}
 `
@@ -162,6 +162,7 @@ export const DayScheduleButton = styled.button`
 export const LectureInfoDiv = styled.div`
 	height: 80%;
 	width: 25%;
+	padding: 20px 0px 20px 0px;
 
 	@media (max-width: ${MaxWidth}) {
 		width: 90%;
@@ -214,6 +215,10 @@ export const SpeakersDiv = styled.div`
 	width: 90%;
 	border-bottom: 1px solid white;
 	margin-bottom: 5%;
+
+	@media(max-width: ${MaxWidth}) {
+		margin-top: 20px;
+	}
 `
 
 export const SpeakersHeader = styled.h2`
@@ -243,4 +248,5 @@ export const LogoImage = styled.div<ImageDiv>`
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-color: ${colors.background};
+	margin-bottom: 40px;
 `

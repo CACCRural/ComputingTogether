@@ -5,7 +5,7 @@ import outfitRegular from '../assets/fonts/Outfit-Regular.otf'
 import callingCode from '../assets/fonts/Calling-Code-Regular.otf'
 
 
-export const MaxWidth = '1024px'
+export const MaxWidth = '1200px'
 
 export default createGlobalStyle`
   body { 

@@ -8,6 +8,7 @@ import '../../assets/background/green_background.png'
 export const NavBarDiv = styled.div`
   position: -webkit-sticky;
   position: sticky;
+  z-index: 100;
   top: 0em;
   width: 100%;
   height: 125px;

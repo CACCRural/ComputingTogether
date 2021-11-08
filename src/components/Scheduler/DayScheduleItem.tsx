@@ -21,7 +21,7 @@ export default function DayScheduleItem(props: any) {
         contentHeight='100%'
         backgroundColor={selected ? colors.background_highlight: ''}
       >
-          {lecture.title}
+        {lecture.title}
       </Window>
     </DayScheduleButton>
   )

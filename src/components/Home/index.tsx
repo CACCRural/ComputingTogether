@@ -20,7 +20,7 @@ function Home() {
             É nosso sincero desejo que apreciem a paixão, o cuidado e o profissionalismo do trabalho realizado que culminou no Evento que presenciarão. Desde já, nosso muito obrigado!
           </p>
         </TextDiv>
-        <Window titleSize="160%" title="O que é o maratonou!?" width="100%" height='300px'>
+        <Window titleSize="160%" title="O que é o maratonou!?" width="100%" height='300px' contentHeight="70%">
           <p>
           O maratonou! é a iniciativa de estudos de programação competitiva do curso de Ciência da Computação da Rural
           que visa treinar os nossos alunos para competições como a Maratona SBC de Programação e Olimpíada Brasileira de Informática (OBI) que dão acesso a competições internacionais.
