@@ -17,11 +17,13 @@ export default function DayScheduleItem(props: any) {
     <DayScheduleButton onClick={() => onClick(lecture.id)}>
       <Window 
         title={lecture.time} height={props.height}
-        width={props.width} titleSize="1.7vw"
-        contentHeight='100%'
+        width={props.width} contentHeight='calc(100% - 55px)'
         backgroundColor={selected ? colors.background_highlight: ''}
+        textAlign='center'
       >
-        {lecture.title}
+        <p className="buttonText">
+          {lecture.title}
+        </p>
       </Window>
     </DayScheduleButton>
   )

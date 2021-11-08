@@ -4,10 +4,11 @@ import { WindowProps } from '../../types'
 import { WindowDiv, TitleDiv, CirclesDiv, Circle, Sphere, SimbolsDiv, Simbol } from './styles'
 
 export default function Window(props:WindowProps) {
-  const titleSize = props.titleSize ? props.titleSize: "2vw"
+  const titleSize = props.titleSize ? props.titleSize: ""
+  const textAlign = props.textAlign ? props.textAlign: "justify"
 
   return (
-    <WindowDiv {...props}>
+    <WindowDiv {...props} textAlign={textAlign}>
       <TitleDiv titleSize={titleSize}>
         <SimbolsDiv>
           <Simbol>

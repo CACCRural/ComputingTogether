@@ -148,14 +148,24 @@ export const DayScheduleButton = styled.button`
   align-items: center;
   color: ${colors['text']};
   text-decoration: none;
-	font-size: 1vw;
-
-	@media (min-width: 2500px) {
-		font-size: 1.5vw;
-	}
+	font-size: 120%;
 
 	@media (max-width: ${MaxWidth}) {
-		font-size: 3.5vw;
+		font-size: 120%;
+	}
+
+	@media (min-width: 2500px) {
+		font-size: 180%;
+		text-align: center;
+	}
+
+	.buttonText {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
 	}
 `
 
@@ -215,6 +225,7 @@ export const SpeakersDiv = styled.div`
 	width: 90%;
 	border-bottom: 1px solid white;
 	margin-bottom: 5%;
+	margin-top: 5%;
 
 	@media(max-width: ${MaxWidth}) {
 		margin-top: 20px;
@@ -231,6 +242,7 @@ export const LectureDescription = styled.p`
 	color: white;
 	padding: 0px 25px 0px 25px;
 	margin-bottom: 10%;
+	overflow: auto;
 `
 
 export const LogoImage = styled.div<ImageDiv>`

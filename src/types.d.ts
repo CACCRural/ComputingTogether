@@ -28,4 +28,5 @@ export type WindowProps = {
   contentBackgroundColor?: string
   removePadding?: boolean
   backgroundColor? : string
+  textAlign?: string
 }
