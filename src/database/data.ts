@@ -107,7 +107,7 @@ export const scheduleData: Schedule[] = [
         time: '14h - 15h',
         speakers: ['Miguel Brito'],
         description: 'Quem programa, seja por hobbie ou profissionalmente, muito provavelmente encontrará uma situação em que precisará melhorar o desempenho de seus programas. Antes de otimizarmos nosso código, precisamos saber medí-lo de uma forma confiável e correta. Para isso, precisamos de ferramentas apropriadas e confiáveis. Nesta palestra falarei sobre o pyperf, uma ferramenta para escrita, análise e comparação de desempenho de programas escritos em Python. Discutirei o porquê pyperf é uma alternativa mais apropriada do que o módulo time do Python, ou o timeit, e como você poderá fazer proveito de suas funcionalidades mais relevantes. ',        speakersImage: ['miguel.jpeg'],
-        logoImage: 'logos/page_logo.png',
+        logoImage: '',
       },
       {
         id: 301,
